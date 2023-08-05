@@ -410,3 +410,24 @@
     width: 70%;
   }
 }
+
+@media (max-width: 414px) {
+  .previous,
+  .next {
+    max-width: 150px;
+  }
+
+  .post > .header {
+    padding: 1rem;
+    gap: 50px;
+  }
+
+  .meta {
+    /* width: 50%; */
+    align-items: center;
+  }
+
+  .blurb > .paragraph {
+    width: 90%;
+  }
+}
