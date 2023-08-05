@@ -206,8 +206,58 @@
 /* SideBar */
 #sidebar {
   width: 350px;
-  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mini-posts {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+}
+
+.mini-post {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.mini-post > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  border: 0;
+  padding: 20px;
+}
+
+.header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tertiary_title {
+  font-weight: 400;
+  color: var(--color-grey-1);
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  height: 20px;
+}
+.published {
+  font-size: 12px;
+  letter-spacing: 1.44;
+  opacity: 1;
+  color: var(--color-grey-2);
+  text-transform: uppercase;
+}
+
+.author > img {
+  border-radius: 50%;
 }
