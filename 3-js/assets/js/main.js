@@ -17,8 +17,11 @@ document.querySelector(".video").addEventListener("click", () => {
  *Sistema de sanfona para a lista
  */
 
-document.querySelector(".item").addEventListener("click", () => {
-  document.querySelector(".item").classList.toggle("-active");
-});
+document.querySelector(".accordion").addEventListener("click", (e) => {
+  const ItemList = document.querySelectorAll(".item");
 
-console.log(document.querySelectorAll(".item"));
+  if (e.target.className === "title") {
+    const index = Number(e.target.innerText.split(" ")[1]);
+    ItemList[index - 1].classList.toggle("-active");
+  }
+});
