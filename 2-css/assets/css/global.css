@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --color-brand-1: #f4f4f4;
+  --color-grey-1: #3C3B3B; 
+   --color-grey-2: #808080;
+  --color-grey-3: #8e8e8e; 
+  --color-grey-4:   #828282;
+  --color-grey-5:  #EEEEEE
+  --color-grey-6:  rgba(255, 255, 255, 1);
+}
+
+
+
+body {
+  background-color: rgba(238, 238, 238, 1);
+  font-family: 'Source Sans Pro';
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+}
