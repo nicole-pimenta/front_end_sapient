@@ -25,3 +25,15 @@ document.querySelector(".accordion").addEventListener("click", (e) => {
     ItemList[index - 1].classList.toggle("-active");
   }
 });
+
+/**
+ *Abrir modal com a foto e fazer função no botão de fechar
+ */
+
+document.querySelector("#button-modal").addEventListener("click", () => {
+  document.querySelector(".modal-wiki").classList.add("modal-wiki-active");
+});
+
+document.querySelector("#close-modal").addEventListener("click", () => {
+  document.querySelector(".modal-wiki").classList.remove("modal-wiki-active");
+});
