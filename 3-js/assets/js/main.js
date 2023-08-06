@@ -27,6 +27,38 @@ document.querySelector(".accordion").addEventListener("click", (e) => {
 });
 
 /**
+ *Carregamento de conteúdo ajax pela api da Wikipedia
+ */
+
+const url =
+  "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Alber%20Einstein";
+
+// fetch(url, {
+//   mode: "no-cors",
+//   credentials: "include",
+//   method: "GET",
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json))
+//   .catch((error) => console.log("Authorization failed : " + error.message));
+
+async function getData() {
+  const response = await fetch(url, {
+    mode: "no-cors",
+    credentials: "include",
+    method: "GET",
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
+
+  const data = await response.json();
+
+  console.log(data);
+}
+getData();
+
+/**
  *Abrir modal com a foto e fazer função no botão de fechar
  */
 
